@@ -1,0 +1,28 @@
+h1{
+    color: blue;
+    background-color: yellowgreen;
+}
+div{
+    /* background-color: blue; */
+   /* font: size 25px; */
+}
+.div{
+      background-color: chartreuse;
+}
+.div2{
+    background-color:gold;
+}
+.parent{
+    font-size: 25px;
+    /* border-top */
+    /* border-top-width */
+    /* border-top-style */
+    border-top: green;
+    border-bottom: yellowgreen;
+    font-size: 25px;
+}
+.main{
+    color: azure;
+    background-color: blanchedalmond;
+    border: 4px dotted;
+}
