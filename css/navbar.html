@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NAVBAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         .header .container{
             height: 100px;
             width: 100%;
-            border-bottom: 15px solid black;
+            border-bottom: 1px solid gray;
         }
         header .container .navbar{
             height: 100px;
@@ -46,6 +47,38 @@
                 padding: 10px;
                 margin-left: 15px;
             }
+            #gallery{
+              position: relative;
+            }
+            .dropdown{
+              position: absolute;
+              background-color: aqua;
+              left: 30px;
+              width: 300px;
+              padding: 15px;
+              display: none;
+            }
+            .dropdown .item{
+              border-bottom: 1px solid teal;
+              padding-bottom: 5px;
+              padding-top: 3px;
+            }
+            #gallery :hover .dropdown{
+              display: block;
+            }
+            #cover .background{
+              background: url(images/plants.jpg);
+              height: 600px;
+              width: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-attachment: fixed;
+            }
+            #cover .background{
+              height: 600px;
+              background-image: linear-gradient(rgb(155, 121, 121) blue);
+            }
     </style>
 </head>
 <body>
@@ -60,7 +93,16 @@
                     <ul>
                          <li>home</li>
                          <li>about</li>
-                         <li>gallary</li>
+                         <li id="gallery">gallery
+                          <div class="fa fa-caret-down"></div>
+                          <div class="dropdown">
+                            <div class="item">INDOOR PLANTS</div>
+                            <div class="item">OUTDOOR PLANTS</div>
+                          </div>
+                         </li>
+                        
+                          </i>
+                         </li>
                          <li>policy</li>
                          <li>contact</li>
                          <li>faq</li>
@@ -72,6 +114,16 @@
      </div>
            </header>
            <!-- header end -->
+            <!-- cover image section start -->
+             <section id="cover">
+                 <div class="background">
+                  <div class="col">
+                     <h1>WELCOME TO OUR PLANT NURSERY</h1>
+                  </div>
+                 </div>
+             </section>
+              <!-- cover image section end -->
+        
         
     
 </body>
